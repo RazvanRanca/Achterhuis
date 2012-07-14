@@ -1,0 +1,35 @@
+======= What this is =======
+A relatively simple 2D flash game, written in ActionScript3.
+More specifically an isometric 8bit story driven game.
+
+======= How can it be played =======
+Assuming you have flash, it can be played directly online here: http://globalgamejam.org/2011/achterhuis/play
+Alternatively the self-contained "GGJ.swf" object can also be used.
+*** Note: To add to the story feel, the game is designed to be played only once. When you die you're supposed to stay dead. Though, it isn't completely impossible to trick death in this game world, all that is needed is to delete the appropriate Flash player storage site. :) 
+
+======= How this came to be =======
+The game was a project me and 3 other teammates undertook for the 2011 Global Game Jam: http://globalgamejam.org/
+The 4 of us, 2 artists and 2 programmers, made this little game from scratch in 48 hours.
+As can be seen from the lack of audio and occasional spelling mistakes, the game doesn't have a lot of polish, but we were quite happy with the result, given the stringent time constraints.
+
+======= Tools used =======
+ActionScript itself allows for fast development of interactive content, making it a good choice for projects such as this.
+To provide an additional boost in efficiency we used the flashpunk library ( http://flashpunk.net/ ) as well as a level editor, OgmoEditor ( http://www.ogmoeditor.com/ ). Both are excellent tools.
+
+======= Original game description, for the GGJ website =======
+" This game in an attempt to make an interactive story, rather than a true game.
+
+The year is 1944. Hitlers systematic destruction of "the untermensch" across europe has killed nearly everyone you love. You have managed to escape to a small village in poland with your grandmother and little brother, and are now hiding in an abandoned basement, praying no-one finds you.
+You only have one life.
+Make it count.
+
+Arrows keys to move, space to interact with objects. "
+
+======= The Team =======
+Artists:
+Craig Paton - http://craigpaton.com/
+Angela Hynd
+
+Programmers:
+Darran Jamieson - http://www.spiffinggames.com/
+Razvan Ranca

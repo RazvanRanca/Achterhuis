@@ -1,0 +1,20 @@
+<project>
+	<name>GGJ-LevelEditor</name>
+	<settings>
+		<defaultWidth>4000</defaultWidth>
+		<defaultHeight>4000</defaultHeight>
+		<workingDirectory>../gfx</workingDirectory>
+	</settings>
+	<tilesets>
+		<tileset name="wall" image="tiles_bricks.png" tileWidth="40" tileHeight="40" />
+	</tilesets>
+	<objects>
+		<object name="player" image="player_placeholder.png" width="40" height="40" limit="1"/>
+		<object name="enemy" image="enemy_placeholder.png" width="40" height="40"/>
+	</objects>
+	<layers>
+		<grid name="collidableGrid" gridSize="40" exportAsObjects="true" />
+		<objects name="actors" gridSize="40" />
+		<tiles name="tilesAbove" gridSize="40" exportTileIDs="true" />
+	</layers>
+</project>

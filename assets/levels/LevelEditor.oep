@@ -1,0 +1,59 @@
+<project>
+	<name>GGJ-LevelEditor</name>
+	<settings>
+		<defaultWidth>3000</defaultWidth>
+		<defaultHeight>2000</defaultHeight>
+		<minWidth>640</minWidth>
+		<maxWidth>4000</maxWidth>
+		<minHeight>480</minHeight>
+		<maxHeight>4000</maxHeight>
+		<workingDirectory>../gfx</workingDirectory>
+	</settings>
+	<tilesets multipleTilesets="true" exportTileIDs="true">
+		<tileset name="all" image="maptiles.png" tileWidth="40" tileHeight="40" />
+		<tileset name="basement" image="basetiles.png" tileWidth="40" tileHeight="40"/>
+	</tilesets>
+	<objects>
+		<object name="player" image="player_placeholder.png" width="40" height="40" limit="1"/>
+		<object name="enemy" image="enemy_placeholder.png" width="40" height="40">
+			<nodes drawObject="true" lineMode="2"/> 
+			<values>
+				<integer name="type" min="0" max="1" default="0" />
+			</values>
+		</object>
+		<object name="VIP" image="Characters/Baker/bakerstandleft.png" width="40" height="40">
+			<values>
+				<integer name="item" min="0" max="1" default="0" />
+				<integer name="onLevel" min="0" max="7" default="1" />
+			</values>
+			<nodes drawObject="true" lineMode="2"/>
+		</object>
+		<object name="Civilian" image="Characters/Civilian1/civilian1standleft.png" width="40" height="40">
+			<values>
+				<integer name="type" min="2" max="3" default="2" />
+			</values>
+			<nodes drawObject="true" lineMode="2"/>
+		</object>
+		<object name="door" image="door_placeholder.png" width="40" height="40" limit="1">
+			<values>
+				<integer name="leadsToLevel" min="0" max="1" default="0" />
+			</values>
+		</object>
+		<object name="object" image="object_placeholder.png" width="40" height="40">
+			<values>
+				<integer name="objectType" min="0" max="2" default="0" />
+			</values>
+		</object>
+		<object name="family" image="Characters/Brother/Brother_Left1.png" width="40" height="40">
+			<values>
+				<integer name="objectType" min="0" max="2" default="0" />
+			</values>
+			<nodes drawObject="true" lineMode="2"/>
+		</object>
+	</objects>
+	<layers>
+		<grid name="collidableGrid" gridSize="40" exportAsObjects="true" />
+		<objects name="actors" gridSize="40" />
+		<tiles name="tilesAbove" gridSize="40" exportTileIDs="true" multipleTilesets="true"/>
+	</layers>
+</project>
